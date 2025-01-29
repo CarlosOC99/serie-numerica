@@ -7,7 +7,6 @@ function Numbers() {
   const [result, setResult] = useState(null);
 
 const handleCalculate = async (n) => {
-  console.log('Enviando solicitud con n:', n);
 
   try {
     const response = await fetch('http://localhost:5000/api/calculate', {
