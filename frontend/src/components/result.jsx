@@ -1,10 +1,11 @@
 import React from "react";
+import style from "../assets/result.module.css"
 
 function Result({ result }) {
   return (
-    <div>
+    <div className={style.resultado}>
       {result !== null ? (
-        <p>El resultado de la serie es: {result}</p>
+        <p>El resultado de la serie es: <br/> {result}</p>
       ) : (
         <p>Introduce un número para calcular la serie.</p>
       )}

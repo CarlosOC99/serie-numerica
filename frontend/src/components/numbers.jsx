@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import style from "../assets/secuence.module.css"
 import Sequence from "./Sequence";
 import Result from "./result";
 
@@ -39,7 +40,7 @@ const handleCalculate = async (n) => {
   
 
   return (
-    <div>
+    <div className={style.general}>
       <Sequence onCalculate={handleCalculate} />
       <Result result={result} />
     </div>
